@@ -1,1 +1,61 @@
-//Тут будет scss для header
+.header {
+	background: #161c35;
+	color: white;
+	position: relative;
+}
+
+.header__container {
+	padding-top: 26px;
+	min-height: 480px;
+	text-align: center;
+	position: relative;
+	
+	&::after {
+		content: "";
+		width: 190px;
+		height: 255px;
+		background: url('../../img/traveller-illustration-mobile@1x.png');
+		position: absolute;
+		left: 38%;
+		bottom: 0;
+
+		@media screen and (min-width: $tablet-width) { 
+			background: url('../../img/traveller-illustration-tablet@1x.png');
+			width: 370px;
+			height: 450px;
+			left: 39%;
+		}
+		@media screen and (min-width: $desktop-width) { 
+			background: url('../../img/traveller-illustration-desktop@1x.png');
+			width: 430px;
+			height: 640px;
+			left: 500px;
+		}
+	}
+	@media screen and (min-width: $tablet-width) { 
+		min-height: 853px;
+		padding-top: 45px;
+	}
+	@media screen and (min-width: $desktop-width) { 
+		min-height: 853px;
+		text-align: left;
+	}
+}
+
+.header__title {
+	margin-top: 46px;
+	font-size: 36px;
+	padding: 0 10px;
+	@media screen and (min-width: $tablet-width) {
+		margin: 76px auto;
+		max-width: 500px;
+		font-size: 60px;
+		padding: 0 40px;
+	}
+	@media screen and (min-width: $desktop-width) {
+		margin: 130px 0;
+		max-width: 500px;
+		font-size: 60px;
+		padding: 0 40px;
+	}
+}

@@ -8,7 +8,7 @@ body {
   font-weight: $main-font-weight;
   color: $main-color-text;
 
-  background-color: #ffffff;
+  background-color: $main-bg-color;
 
 }
 
@@ -49,19 +49,22 @@ html {
 //Описываем контейнер
 
 .container {
-  max-width: $mobile-width;
+  max-width: 430px;
   margin: 0 auto;
+  padding: 0 25px;
 }
 
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
+    max-width: 1000px;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    max-width: $desktop-width;
+    padding: 0 40px;
   }
 }

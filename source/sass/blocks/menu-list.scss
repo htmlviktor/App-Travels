@@ -1,0 +1,15 @@
+.menu-list {
+  @include reset-list;
+  padding-left: 140px;
+}
+
+.menu-list__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+  a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}

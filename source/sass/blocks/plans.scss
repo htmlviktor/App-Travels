@@ -1,0 +1,112 @@
+.plans__list {
+  @include reset-list;
+  counter-reset: count;
+  li {
+    position: relative;
+    &::before {
+      counter-increment: count;
+      content: counter(count);
+      font-size: 18px;
+      color: white;
+      right: 14px;
+      top: 20px;
+      position: absolute;
+    }
+  }
+}
+
+.plans__step {
+  min-height: 90px;
+  background: #ff8d30;
+  color: #161c35;
+  font-weight: 700;
+  padding: 23px 100px 23px 25px;
+  border-radius: 10px;
+
+  &--two {
+    background: #ffa530;
+    transform: translateY(-15px);
+  }
+  &--three {
+    background: #ffbd30;
+    transform: translateY(-30px);
+  }
+  &--four {
+    background: #ffd74b;
+    transform: translateY(-45px);
+    min-height: 80px;
+  }
+
+}
+
+@media screen and (min-width: $tablet-width) {
+  .plans {
+    margin-top: 178px;
+  }
+  .plans__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    li {
+      &::before {
+        font-size: 30px;
+        left: 33px;
+        top: 85px;
+      }
+    }
+  }
+  .plans__step {
+    transform: none;
+    width: 52%;
+    min-height: 140px;
+    font-size: 24px;
+    padding: 28px 100px 23px 33px;    
+    &:nth-child(2n) {
+      width: 48%;
+      position: relative;
+      &::after {
+        content: "";
+        height: 100%;
+        width: 25px;
+        border-radius: 10px 0 0 10px; 
+        position: absolute;
+        top: 0;
+        left: -15px;;
+        background: inherit;
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-width) {
+  .plans__list {
+    flex-wrap: nowrap;
+    li {
+      &::before {
+        font-size: 30px;
+        left: 90%;
+        top: 20px;
+      }
+    }
+  }
+  .plans__step {
+    width: 25%;
+    min-height: 107px;
+    padding: 20px 50px 20px 20px;
+    font-size: 24px;
+    &:nth-child(2n) {
+      width: 25%;
+    }
+    &:not(:first-child) {
+      &::after {
+        content: "";
+        height: 100%;
+        width: 25px;
+        border-radius: 10px 0 0 10px; 
+        position: absolute;
+        top: 0;
+        left: -15px;;
+        background: inherit;
+      }
+      }
+    }
+}

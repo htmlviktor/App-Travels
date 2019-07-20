@@ -1,0 +1,66 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.navigation__toggle {
+	font-size: 0;
+	background: none;
+	border: none;
+	position: relative;
+	width: 25px;
+	height: 11px;
+	&::before {
+		content: "";
+		width: 100%;
+		height: 2px;
+		background: white;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&::after {
+		content: "";
+		width: 100%;
+		height: 2px;
+		background: white;
+		position: absolute;
+		top: 7px;
+		left: 0px;	
+	}
+}
+
+
+.navigation__list {
+	position: absolute;
+	top:  100px;
+	display: none;
+}
+
+.navigation__contacts {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	@include reset-list;
+	z-index: 10;
+	@media screen and (min-width: $tablet-width) {
+		position: static;
+	}
+}
+
+@media screen and (min-width: $desktop-width) {
+	.navigation {
+		justify-content: flex-start;
+	}
+	.navigation__list {
+		display: flex;
+		position: static;
+	}
+	.navigation__toggle {
+		display: none;
+	}
+	.navigation__contacts {
+		margin-left: auto;
+	}
+}

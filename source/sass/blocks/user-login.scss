@@ -1,0 +1,65 @@
+.user-login {
+	display: flex;
+	justify-content:center;
+	width: 100%;
+	@media screen and (min-width: $tablet-width) {
+		width: auto;
+	}
+}
+
+.user-login__tel {
+	.user-login__link {
+		font-size: 0;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: #ff8d30;
+		background-image:  url("../../img/topmenu-phone.svg");
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		display: block;
+	}
+	@media screen and (min-width: $tablet-width) {
+		display: none;	
+	}
+	@media screen and (min-width: $desktop-width) {
+		display: block;	
+	}
+}
+
+.user-login__mail {
+	.user-login__link {
+		font-size: 0;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: #ffbd30;
+		background-image:  url("../../img/topmenu-mail.svg");
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		display: block;
+	}
+	@media screen and (min-width: $tablet-width) {
+		display: none;	
+	}
+	@media screen and (min-width: $desktop-width) {
+		display: block;	
+	}
+}
+
+.user-login__authorization {
+	.user-login__link {
+		border-radius: 20px;
+		padding: 12px 40px;
+		background-color: $light-color;
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		display: block;
+	
+		text-transform: uppercase;
+		font-weight: 700;
+	}	
+}
