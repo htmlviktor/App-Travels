@@ -46,7 +46,6 @@
   .plans__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px;
     li {
       &::before {
         font-size: 30px;
@@ -78,7 +77,11 @@
   }
 }
 @media screen and (min-width: $desktop-width) {
+  .plans {
+    margin-top: 100px;
+  }
   .plans__list {
+    padding: 0;
     flex-wrap: nowrap;
     li {
       &::before {
@@ -93,6 +96,7 @@
     min-height: 107px;
     padding: 20px 50px 20px 20px;
     font-size: 24px;
+    border-radius: 20px;
     &:nth-child(2n) {
       width: 25%;
     }

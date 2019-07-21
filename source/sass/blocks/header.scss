@@ -2,14 +2,28 @@
 	background: #161c35;
 	color: white;
 	position: relative;
+
+	padding-top: 26px;
+	min-height: 480px;
+	@media screen and (min-width: $tablet-width) { 
+		min-height: 853px;
+		padding-top: 45px;
+	}
+	@media screen and (min-width: $desktop-width) { 
+		min-height: 765px;
+		padding-top: 50px;
+		text-align: left;
+	}
 }
 
 .header__container {
-	padding-top: 26px;
-	min-height: 480px;
 	text-align: center;
 	position: relative;
+	min-height: inherit;
 	
+	@media screen and (min-width: $desktop-width) { 
+		min-height: 862px;
+	 }
 	&::after {
 		content: "";
 		width: 190px;
@@ -29,16 +43,9 @@
 			background: url('../../img/traveller-illustration-desktop@1x.png');
 			width: 430px;
 			height: 640px;
-			left: 500px;
+			left: 545px;
+			bottom: 152px;
 		}
-	}
-	@media screen and (min-width: $tablet-width) { 
-		min-height: 853px;
-		padding-top: 45px;
-	}
-	@media screen and (min-width: $desktop-width) { 
-		min-height: 853px;
-		text-align: left;
 	}
 }
 
@@ -53,9 +60,17 @@
 		padding: 0 40px;
 	}
 	@media screen and (min-width: $desktop-width) {
-		margin: 130px 0;
-		max-width: 500px;
-		font-size: 60px;
-		padding: 0 40px;
+		margin: 108px 0;
+    max-width: 500px;
+    font-size: 60px;
+    padding: 0 0 0 67px;
+    text-align: left;
+	}
+}
+
+
+@media screen and (min-width: $desktop-width) {
+	.navigation__logo-image {
+		widows: 188px;
 	}
 }

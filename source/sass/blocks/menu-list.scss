@@ -1,6 +1,6 @@
 .menu-list {
   @include reset-list;
-  padding-left: 140px;
+  padding-left: 170px;
 }
 
 .menu-list__item {
@@ -11,5 +11,6 @@
     color: white;
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 20px;
   }
 }

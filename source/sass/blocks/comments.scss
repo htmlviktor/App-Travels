@@ -27,15 +27,15 @@
   }
   .comments__author {
     font-size: 21px;
-    max-width: 261px;
+    max-width: 310px;
     padding-left: 25px;
     line-height: 23px;
-    margin-top: 49px;
+    margin-top: 18px;
   }
 }
 @media screen and (min-width: $desktop-width) {
   .comments {
-    margin-top: -770px;
+    margin-top: -817px;
   }
   .comments__container {
     display: flex;
