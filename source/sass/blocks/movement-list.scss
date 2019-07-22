@@ -1,0 +1,17 @@
+.movement-list {
+  @include reset-list;
+  display: flex;
+  padding: 0 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movement-list__item {
+  font-size: 0;
+  opacity: 0.15;
+
+  &--active {
+    opacity: 1;
+    fill: #192144;
+  }
+}

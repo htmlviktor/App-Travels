@@ -69,60 +69,109 @@
 				Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
 			<p class="about-service__quote">А если найдете кого-то близкого по духу
 				— скорее зовите в совместный трип!</p>
-				<a href="" class="about-service__link btn btn--arrow-left">Подробнее</a>
+			<a href="" class="about-service__link btn btn--arrow-left">Подробнее</a>
 		</div>
 	</section>
 	<section class="way-trip">
 		<div class="container way-trip__container">
-			<h2 class="way-trip">Направления</h2>
-			<p class="way-trip__text">Мы не продаем туры и ничего не рекламируем.
-				Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+			<div class="way-trip__description-containet">
+				<h2 class="way-trip__title">Направления</h2>
+				<p class="way-trip__text">Мы не продаем туры и ничего не рекламируем.
+					Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+			</div>
 			<ul class="way-trip__list">
 				<li class="way-trip__item">
-					<img src="" alt="" class="way-trip__image">
+					<picture class="way-trip__image">
+						<source media="(min-width:768px)" srcset="img/thailand-desktop@1x.jpg">
+						<img src="img/thailand-mobile@1x.jpg" alt="">
+					</picture>
 					<div class="way-trip__wrapper">
 						<h2 class="way-trip__item-title">Тайланд</h2>
-						<span class="way-trip__count-people">18321</span>
+						<span class="way-trip__count-people"><span>
+								<svg width="11" height="11">
+									<use xlink:href="img/sprite/sprite.svg#icon-user">
+								</svg>
+							</span> 18321</span>
 						<span class="way-trip__item-text">Джунгли зовут!</span>
 					</div>
 				</li>
 				<li class="way-trip__item">
-					<img src="" alt="" class="way-trip__image">
+					<picture class="way-trip__image">
+						<source media="(min-width:768px)" srcset="img/france-desktop@1x.jpg">
+						<img src="img/france-mobile@1x.jpg" alt="">
+					</picture>
 					<div class="way-trip__wrapper">
 						<h2 class="way-trip__item-title">Франция</h2>
-						<span class="way-trip__count-people">18321</span>
+						<span class="way-trip__count-people"><span>
+								<svg width="11" height="11">
+									<use xlink:href="img/sprite/sprite.svg#icon-user">
+								</svg>
+							</span> 18321</span>
 						<span class="way-trip__item-text">Джунгли зовут!</span>
 					</div>
 				</li>
 				<li class="way-trip__item">
-					<img src="" alt="" class="way-trip__image">
+					<picture class="way-trip__image">
+						<source media="(min-width:768px)" srcset="img/czech-desktop@1x.jpg">
+						<img src="img/czech-mobile@1x.jpg" alt="">
+					</picture>
 					<div class="way-trip__wrapper">
 						<h2 class="way-trip__item-title">Чехия</h2>
-						<span class="way-trip__count-people">18321</span>
+						<span class="way-trip__count-people"><span>
+								<svg width="11" height="11">
+									<use xlink:href="img/sprite/sprite.svg#icon-user">
+								</svg>
+							</span> 18321</span>
 						<span class="way-trip__item-text">Джунгли зовут!</span>
 					</div>
 				</li>
 			</ul>
-			<a href="" class="way-trip__link btn btn--all-show">Показать всё</a>
+			<a href="" class="way-trip__link btn btn--all-show btn--arrow-left">Показать всё</a>
 		</div>
 	</section>
 	<section class="travelers">
 		<div class="container travelers__container">
-			<h2 class="travelers__title">Попутчики</h2>
-			<p class="travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-				Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
-			<p class="travelers__quote">Теперь можно легко найти единомышленников!</p>
+			<div class="travelers__description-container">
+				<h2 class="travelers__title">Попутчики</h2>
+				<p class="travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+					Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>	
+				<p class="travelers__quote">Теперь можно легко найти единомышленников!</p>
+		</div>
 			<ul class="travelers__list">
 				<li class="travelers__item">
-					<img src="" alt="" class="travelers__item-image">
+					<div class="travelers__item-indicator">
+						<span class="travelers__item-indicator-level">99</span>
+						<span class="travelers__item-indicator-text">lebel</span>
+					</div>
+					<picture class="travelers__item-image">
+						<source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg">
+						<source media="(min-width: 1300px)" srcset="img/firsova-desktop@1x.jpg">
+						<img src="img/firsova-tablet@1x.jpg" alt="">
+					</picture>
 					<div class="travelers__item-wrapper">
 						<h2 class="travelers__item-author">Таня Фирсова</h2>
 						<p class="travelers__item-hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
 						<ul class="travelers__item-movement movement-list">
-							<li class="movement-list__item movement-list__item--air">Самолётом</li>
-							<li class="movement-list__item movement-list__item--bus">Автобусом</li>
-							<li class="movement-list__item movement-list__item--bike">Велосипедом</li>
-							<li class="movement-list__item movement-list__item--steps">Пешком</li>
+							<li class="movement-list__item movement-list__item--active">
+								<svg width="19" height="21">
+										<use xlink:href="img/sprite/sprite.svg#icon-plane">
+								</svg>
+							</li>
+							<li class="movement-list__item ">
+									<svg width="19" height="21">
+											<use xlink:href="img/sprite/sprite.svg#icon-bus">
+									</svg>
+							</li>
+							<li class="movement-list__item ">
+									<svg width="19" height="21">
+											<use xlink:href="img/sprite/sprite.svg#icon-bike">
+									</svg>
+							</li>
+							<li class="movement-list__item">
+									<svg width="19" height="21">
+											<use xlink:href="img/sprite/sprite.svg#icon-run">
+									</svg>
+							</li>
 						</ul>
 					</div>
 					<ul class="travelers__flags">
@@ -132,16 +181,40 @@
 					</ul>
 				</li>
 				<li class="travelers__item">
-					<img src="" alt="" class="travelers__item-image">
+						<div class="travelers__item-indicator">
+								<span class="travelers__item-indicator-level">99</span>
+								<span class="travelers__item-indicator-text">lebel</span>
+							</div>
+						<picture class="travelers__item-image">
+								<source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
+								<source media="(min-width: 1300px)" srcset="img/demin-desktop@1x.jpg">
+								<img src="img/demin-tablet@1x.jpg" alt="">
+							</picture>
 					<div class="travelers__item-wrapper">
-						<h2 class="travelers__item-author">Таня Фирсова</h2>
+						<h2 class="travelers__item-author">Петя Демин</h2>
 						<p class="travelers__item-hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
 						<ul class="travelers__item-movement movement-list">
-							<li class="movement-list__item movement-list__item--air">Самолётом</li>
-							<li class="movement-list__item movement-list__item--bus">Автобусом</li>
-							<li class="movement-list__item movement-list__item--bike">Велосипедом</li>
-							<li class="movement-list__item movement-list__item--steps">Пешком</li>
-						</ul>
+								<li class="movement-list__item movement-list__item--active">
+									<svg width="19" height="21">
+											<use xlink:href="img/sprite/sprite.svg#icon-plane">
+									</svg>
+								</li>
+								<li class="movement-list__item movement-list__item--active">
+										<svg width="19" height="21">
+												<use xlink:href="img/sprite/sprite.svg#icon-bus">
+										</svg>
+								</li>
+								<li class="movement-list__item ">
+										<svg width="19" height="21">
+												<use xlink:href="img/sprite/sprite.svg#icon-bike">
+										</svg>
+								</li>
+								<li class="movement-list__item movement-list__item--active">
+										<svg width="19" height="21">
+												<use xlink:href="img/sprite/sprite.svg#icon-run">
+										</svg>
+								</li>
+							</ul>
 					</div>
 					<ul class="travelers__flags">
 						<li class="travelers__flags-item">Ямайка</li>
@@ -150,7 +223,7 @@
 					</ul>
 				</li>
 			</ul>
-			<a href="" class="travelers__link btn btn--all-show">Показать всех</a>
+			<a href="" class="travelers__link btn btn--arrow-left">Показать всех</a>
 		</div>
 	</section>
 	<section class="add-profile">
